@@ -32,7 +32,7 @@ class SarsaLanda(object):
             #for s in range(0,self.Sarsa.shape[0]):
             s = np.random.randint(0,36)
             a = np.random.randint(0,4)
-            print "________________",self.Count
+            #print "________________",self.Count
             self.learn(s,a)
             self.Count += 1 
     

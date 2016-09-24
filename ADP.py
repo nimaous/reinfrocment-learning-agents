@@ -36,7 +36,7 @@ class ADPLearn(object):
         
         for item in range(self.iteration):
             s = np.random.randint(0,36)            
-            print "________________",item
+            #print "________________",item
             self.previous_action = None
             self.previous_state = None
             self.do_episod(s)            
@@ -110,9 +110,6 @@ class ADPLearn(object):
                 
              
     def visualize(self):
-        print self.iteration
-        print len(self.state0lst[0])
-        print self.state0lst[0]
         fig1 = plt.figure()
         ax1 = fig1.add_subplot(221)
         ax1.plot(range(self.iteration), self.state0lst[0])#,'-',fig1.autofmt_xdate(),c='b')

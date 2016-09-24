@@ -29,7 +29,7 @@ class QLanda(object):
         for item in range(self.iteration):        
             s = np.random.randint(0,36)
             a = np.random.randint(0,4)
-            print "________________",self.Count            
+            #print "________________",self.Count
             self.learn(s,a)
             self.Count += 1 
     

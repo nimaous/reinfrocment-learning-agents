@@ -37,7 +37,7 @@ class TD(object):
         for item in range(self.iteration):
             #for s in range(0,self.Q.shape[0]):
             s = np.random.randint(0,36)            
-            print "________________",item        
+            #print "________________",item
             self.do_episod(s,gama)
             self.previous_action = None
             self.previous_state = None            
@@ -144,7 +144,7 @@ class TDLanda(object):
             #for s in range(0,self.Q.shape[0]):
             s = np.random.randint(0,36) 
             self.current_state = s
-            print "________________",item        
+            #print "________________",item
             self.do_episod(s)
             self.previous_action = None
             self.previous_state = None            

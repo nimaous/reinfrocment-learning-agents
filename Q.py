@@ -18,7 +18,7 @@ class QLanda(object):
     Policy = []
     
     
-    def __init__(self,iteration,gama,landa,alpha,epsilon):
+    def __init__(self, iteration, gama, landa, alpha, epsilon):
         self.iteration = iteration
         self.gama = gama
         self.env = Environment()

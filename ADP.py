@@ -110,24 +110,26 @@ class ADPLearn(object):
                 
              
     def visualize(self):
-        
+        print self.iteration
+        print len(self.state0lst[0])
+        print self.state0lst[0]
         fig1 = plt.figure()
         ax1 = fig1.add_subplot(221)
-        ax1.plot(range(self.iteration),self.state0lst[0],'-',fig1.autofmt_xdate(),c='b')
+        ax1.plot(range(self.iteration), self.state0lst[0])#,'-',fig1.autofmt_xdate(),c='b')
         plt.title("Utility Diagram Using ADP For state (1,1)")
         plt.xlabel('Iteration')
         plt.ylabel('Utility')
         plt.grid(True)
         
         ax2 = fig1.add_subplot(222)
-        ax2.plot(range(self.iteration),self.state14lst[0],'-',fig1.autofmt_xdate(),c='r')
+        ax2.plot(range(self.iteration),self.state14lst[0],'-')#,fig1.autofmt_xdate(),c='r')
         plt.title("Utility Diagram Using ADP For state (3,3)")
         plt.xlabel('Iteration')
         plt.ylabel('Utility')
         plt.grid(True)
         
         ax3 = fig1.add_subplot(223)
-        ax3.plot(range(self.iteration),self.state28lst[0],'-',fig1.autofmt_xdate(),c='y')
+        ax3.plot(range(self.iteration),self.state28lst[0],'-')#,fig1.autofmt_xdate(),c='y')
         plt.title("Utility Diagram Using ADP For state (5,5)")
         plt.xlabel('Iteration')
         plt.ylabel('Utility') 

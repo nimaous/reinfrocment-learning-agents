@@ -156,7 +156,7 @@ if __name__ == '__main__':
 
     
    
-    print "ending Q learning " 
+    print "The END"
     
 
     
